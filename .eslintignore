@@ -1,0 +1,7 @@
+.cache
+.tmp
+.next
+build
+dist
+public
+**/node_modules/**
