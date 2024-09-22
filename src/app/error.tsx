@@ -44,7 +44,7 @@ export default function RootError() {
       </div>
       <div className="flex gap-4 items-center">
         <Link href={APP_URL.home} className={cn(buttonVariants({ variant: "ghost" }))}>
-          Go home
+          <span className="h-[12px]">GO HOME</span>
         </Link>
         <button
           type="button"
@@ -53,7 +53,7 @@ export default function RootError() {
             window.location.href = window.location.href
           }}
         >
-          Try again
+          <span className="h-[12px]">TRY AGAIN</span>
         </button>
       </div>
     </div>

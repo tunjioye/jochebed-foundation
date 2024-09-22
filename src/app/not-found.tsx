@@ -41,7 +41,7 @@ export default function RootNotFound() {
         </div>
       </div>
       <Link href={APP_URL.home} className={cn(buttonVariants({ variant: "ghost" }))}>
-        Go home
+        <span className="h-[12px]">GO HOME</span>
       </Link>
     </div>
   )
