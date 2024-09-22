@@ -34,19 +34,19 @@ const WAYS_TO_HELP = [
 
 export default function WaysWeHelp() {
   return (
-    <section className="py-20">
+    <section className="w-full py-20">
       <Boxed>
         <h2 className="font-heading text-center text-4xl font-bold mb-4">Ways We Help</h2>
         <div className="text-center text-lg mb-8">The Focus of Our Efforts</div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 px-4 md:px-10">
-          {WAYS_TO_HELP.map((item) => {
+          {WAYS_TO_HELP.map((item, index) => {
             return (
               <div key={item.title} className="flex flex-col items-start gap-4 border p-6">
                 <div className="flex gap-2 items-end font-heading">
-                  <span className="text-gray-500 text-4xl">0{WAYS_TO_HELP.indexOf(item) + 1}</span>
+                  <span className="text-gray-500 text-4xl">0{index + 1}</span>
                   <h3 className="uppercase text-xl font-bold text-jf-yellow">{item.title}</h3>
                 </div>
-                <p className="mb-4">{item.description}</p>
+                <p className="mb-2">{item.description}</p>
                 <Button
                   asChild={item.link != null}
                   className={clsx("mt-auto", {

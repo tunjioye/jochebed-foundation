@@ -9,5 +9,5 @@ type Props = {
 
 export default function Boxed(props: Props) {
   const { children, className } = props
-  return <div className={clsx("w-full max-w-screen-xl", className)}>{children}</div>
+  return <div className={clsx("w-full max-w-screen-xl mx-auto", className)}>{children}</div>
 }
