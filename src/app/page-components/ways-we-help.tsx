@@ -34,11 +34,11 @@ const WAYS_TO_HELP = [
 
 export default function WaysWeHelp() {
   return (
-    <section className="w-full py-20">
+    <section className="w-full pt-16 pb-20 px-4 md:px-8">
       <Boxed>
         <h2 className="font-heading text-center text-4xl font-bold mb-4">Ways We Help</h2>
         <div className="text-center text-lg mb-8">The Focus of Our Efforts</div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 px-4 md:px-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {WAYS_TO_HELP.map((item, index) => {
             return (
               <div key={item.title} className="flex flex-col items-start gap-4 border p-6">
