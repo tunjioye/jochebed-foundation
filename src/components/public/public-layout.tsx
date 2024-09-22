@@ -63,7 +63,7 @@ export function PublicLayout(props: Props) {
               className="object-contain md:object-left max-h-[60px]"
             />
           </Link>
-          <div className="flex items-center gap-4 text-sm">
+          <div className="flex items-center gap-3 md:gap-4 text-sm">
             {NAV_MENU_ITEMS.map((item) => (
               <Link
                 key={item.url}

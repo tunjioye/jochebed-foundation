@@ -53,7 +53,7 @@ const fontSans = localFont({
 
 const fontHeading = FontHeading({
   subsets: ["latin"],
-  weight: "400",
+  weight: ["400", "500", "600", "700"],
   variable: "--font-heading",
 })
 
