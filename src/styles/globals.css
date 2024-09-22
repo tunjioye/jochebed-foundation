@@ -4,6 +4,7 @@
 
 @layer base {
   :root {
+    /* START ShadCN Variables */
     --background: 0 0% 100%;
     --foreground: 0 0% 1%;
     --card: 0 0% 100%;
@@ -27,9 +28,15 @@
 
     --success: 164 62% 22%;
     --success-foreground: 210 40% 98%;
+    /* END ShadCN Variables */
+
+    /* Our Variables */
+    --yellow: #dda108;
+    --gray: #f1f1f1;
   }
 
   .dark {
+    /* START ShadCN Variables */
     --background: 20 14.3% 4.1%;
     --foreground: 0 0% 95%;
     --card: 24 9.8% 10%;
@@ -54,6 +61,11 @@
     --destructive-foreground: 210 40% 98%;
     --success: 164 62% 22%;
     --success-foreground: 210 40% 98%;
+    /* END ShadCN Variables */
+
+    /* Our Variables */
+    --yellow: #dda108;
+    --gray: #f1f1f1;
   }
 }
 

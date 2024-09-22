@@ -8,6 +8,7 @@ import clsx from "clsx"
 import { usePathname } from "next/navigation"
 import Image from "next/image"
 import logo from "/public/img/jochebed-foundation-logo.webp"
+import Boxed from "./boxed"
 
 type Props = {
   readonly children: React.ReactNode
@@ -51,32 +52,34 @@ export function PublicLayout(props: Props) {
 
   return (
     <div id="public-layout" className="flex flex-col flex-1 h-full w-full">
-      <header className="md:sticky top-0 w-full h-[120px] flex items-center gap-4 border-b bg-background px-4 md:px-8 z-10">
-        <nav className="flex flex flex-col md:flex-row gap-4 justify-center md:justify-between items-center text-sm w-full">
-          <Link href={APP_URL.home} className="flex items-center gap-2 font-semibold">
-            <Image
-              src={logo.src}
-              alt={process.env.NEXT_PUBLIC_APP_NAME ?? "Logo"}
-              width={logo.width}
-              height={logo.height}
-              priority={true}
-              className="object-contain md:object-left max-h-[60px]"
-            />
-          </Link>
-          <div className="flex items-center gap-3 md:gap-4 text-sm">
-            {NAV_MENU_ITEMS.map((item) => (
-              <Link
-                key={item.url}
-                href={item.url}
-                className={clsx("hover:text-primary", {
-                  "text-primary font-medium": isCurrentPath(item.url),
-                })}
-              >
-                {item.label}
-              </Link>
-            ))}
-          </div>
-        </nav>
+      <header className="md:sticky top-0 w-full h-[120px] flex justify-center items-center gap-4 border-b bg-background px-4 md:px-8 z-10">
+        <Boxed>
+          <nav className="flex flex flex-col md:flex-row gap-4 justify-center md:justify-between items-center text-sm w-full">
+            <Link href={APP_URL.home} className="flex items-center gap-2 font-semibold">
+              <Image
+                src={logo.src}
+                alt={process.env.NEXT_PUBLIC_APP_NAME ?? "Logo"}
+                width={logo.width}
+                height={logo.height}
+                priority={true}
+                className="object-contain md:object-left max-h-[60px] w-fit"
+              />
+            </Link>
+            <div className="flex items-center gap-3 md:gap-4 text-sm">
+              {NAV_MENU_ITEMS.map((item) => (
+                <Link
+                  key={item.url}
+                  href={item.url}
+                  className={clsx("hover:text-primary", {
+                    "text-primary font-medium": isCurrentPath(item.url),
+                  })}
+                >
+                  {item.label}
+                </Link>
+              ))}
+            </div>
+          </nav>
+        </Boxed>
       </header>
       <div className="flex flex-col flex-1 w-full h-full">{children}</div>
       <footer className="bg-background flex flex-col gap-3 justify-center items-center p-4 md:p-8 min-h-[120px] text-sm text-center">
