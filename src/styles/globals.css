@@ -31,8 +31,8 @@
     /* END ShadCN Variables */
 
     /* Our Variables */
-    --yellow: #dda108;
-    --gray: #f1f1f1;
+    --jf-yellow: #dda108;
+    --jf-gray: #f1f1f1;
   }
 
   .dark {
@@ -64,8 +64,8 @@
     /* END ShadCN Variables */
 
     /* Our Variables */
-    --yellow: #dda108;
-    --gray: #f1f1f1;
+    --jf-yellow: #dda108;
+    --jf-gray: #f1f1f1;
   }
 }
 
