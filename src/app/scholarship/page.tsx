@@ -1,6 +1,11 @@
-"use client"
-
+import { Metadata } from "next/types"
 import { PublicLayout } from "@/components/public/public-layout"
+
+export const metadata: Metadata = {
+  title: process.env.NEXT_PUBLIC_APP_NAME
+    ? `Scholarship | ${process.env.NEXT_PUBLIC_APP_NAME}`
+    : "Scholarship",
+}
 
 export default function ScholarshipPage() {
   return (

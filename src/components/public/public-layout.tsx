@@ -52,7 +52,7 @@ export function PublicLayout(props: Props) {
 
   return (
     <div id="public-layout" className="flex flex-col flex-1 h-full w-full">
-      <header className="md:sticky top-0 w-full h-[120px] flex justify-center items-center gap-4 border-b border-b-primary bg-background px-4 md:px-8 z-10">
+      <header className="md:sticky top-0 w-full h-[120px] flex justify-center items-center gap-4 border-b bg-background px-4 md:px-8 z-10">
         <Boxed>
           <nav className="flex flex flex-col md:flex-row gap-4 justify-center md:justify-between items-center text-sm w-full">
             <Link href={APP_URL.home} className="flex items-center gap-2 font-semibold">
@@ -85,7 +85,7 @@ export function PublicLayout(props: Props) {
       <footer className="bg-background flex flex-col gap-4 justify-center items-center p-4 md:p-8 min-h-[130px] text-sm text-center">
         <Link
           href={`mailto:${CONTACT_EMAIL}`}
-          className="hover:text-primary"
+          className="hover:text-primary hover:font-medium"
           target="_blank"
           rel="noreferrer noopener"
         >
