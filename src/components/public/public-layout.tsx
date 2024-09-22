@@ -82,7 +82,7 @@ export function PublicLayout(props: Props) {
         </Boxed>
       </header>
       <div className="flex flex-col flex-1 w-full h-full">{children}</div>
-      <footer className="bg-background flex flex-col gap-3 justify-center items-center p-4 md:p-8 min-h-[120px] text-sm text-center">
+      <footer className="bg-background flex flex-col gap-4 justify-center items-center p-4 md:p-8 min-h-[130px] text-sm text-center">
         <Link
           href={`mailto:${CONTACT_EMAIL}`}
           className="hover:text-primary"
