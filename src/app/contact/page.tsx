@@ -1,5 +1,7 @@
 import { Metadata } from "next/types"
 import { PublicLayout } from "@/components/public/public-layout"
+import ContactUs from "./page-components/contact-us"
+import LocationOnMap from "./page-components/location-on-map"
 
 export const metadata: Metadata = {
   title: process.env.NEXT_PUBLIC_APP_NAME
@@ -10,7 +12,10 @@ export const metadata: Metadata = {
 export default function ContactPage() {
   return (
     <PublicLayout>
-      <main className="flex flex-col items-center justify-between p-24">Contact Page</main>
+      <main className="flex flex-col items-center">
+        <ContactUs />
+        <LocationOnMap />
+      </main>
     </PublicLayout>
   )
 }
