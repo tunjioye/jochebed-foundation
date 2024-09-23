@@ -1,9 +1,6 @@
 "use client"
 
 import Boxed from "@/components/public/boxed"
-import { Button } from "@/components/ui/button"
-import { APP_URL } from "@/constants/APP_URL"
-import clsx from "clsx"
 import Link from "next/link"
 
 export default function Faq() {
