@@ -7,7 +7,7 @@ const BECOME_A_MEMBER_URL = "https://opencollective.com/jochebedfoundation#categ
 
 export default function BecomeAMember() {
   return (
-    <section className="flex flex-col justify-center items-center text-center w-full min-h-[500px] bg-jf-gray p-4">
+    <section className="flex flex-col justify-center items-center text-center w-full min-h-[400px] bg-jf-gray p-4 py-16">
       <div className="flex flex-col gap-6 justify-center items-center text-center max-w-screen-md">
         <h2 className="text-3xl font-bold">Jochebed Foundation</h2>
         <p className="text-lg mb-2">
