@@ -59,6 +59,7 @@ module.exports = {
         },
         "jf-yellow": "var(--jf-yellow)",
         "jf-gray": "var(--jf-gray)",
+        "jf-green": "var(--jf-green)",
       },
       borderRadius: {
         lg: "var(--radius)",
