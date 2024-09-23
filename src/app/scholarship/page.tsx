@@ -12,7 +12,7 @@ export default function ScholarshipPage() {
   return (
     <PublicLayout>
       <main className="flex flex-col items-center justify-between">
-        <Scholarship/>
+        <Scholarship />
       </main>
     </PublicLayout>
   )

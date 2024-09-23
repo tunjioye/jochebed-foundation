@@ -10,7 +10,7 @@ export default function ContactPage() {
   return (
     <PublicLayout>
       <main className="flex flex-col items-center">
-       <Faq/>
+        <Faq />
       </main>
     </PublicLayout>
   )
