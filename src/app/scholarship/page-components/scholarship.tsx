@@ -2,6 +2,9 @@
 
 import Link from "next/link"
 
+const APPLY_NOW_URL = "https://formfacade.com/sm/mpwHtMB4W"
+const JOIN_US_URL = "https://opencollective.com/jochebed-scholarship"
+
 export default function Scholarship() {
   return (
     <section className="">
@@ -53,7 +56,9 @@ export default function Scholarship() {
                 selection committee carefully reviews each application, considering academic
                 achievements, extracurricular activities, and personal statements.{" "}
                 <Link
-                  href="https://formfacade.com/sm/mpwHtMB4W"
+                  href={APPLY_NOW_URL}
+                  target="_blank"
+                  rel="noreferrer noopener"
                   className="text-jf-yellow underline"
                 >
                   Apply Now
@@ -67,9 +72,11 @@ export default function Scholarship() {
               <p className="mt-2 text-gray-700">
                 We invite donors, partners, and advocates who share our vision for education to join
                 us in making a difference. Your support can create more scholarship opportunities
-                and impact the lives of aspiring students. {""}
+                and impact the lives of aspiring students.{""}
                 <Link
-                  href="https://opencollective.com/jochebed-scholarship"
+                  href={JOIN_US_URL}
+                  target="_blank"
+                  rel="noreferrer noopener"
                   className="text-jf-yellow underline"
                 >
                   Join Us
@@ -141,7 +148,7 @@ export default function Scholarship() {
             </div>
             <div>
               <h3 className="text-xl text-jf-yellow">
-                <span className="text-black">3 |</span>Letters of Recommendation
+                <span className="text-black">3 |</span> Letters of Recommendation
               </h3>
               <p className="mt-2 text-gray-700">
                 Recommendations are required from teachers, mentors, or supervisors who can attest
@@ -229,11 +236,13 @@ export default function Scholarship() {
               <p className="mt-2 text-gray-700">
                 Fill out the application form and make sure to attach all necessary documents.{" "}
                 <Link
-                  href="https://formfacade.com/sm/mpwHtMB4W"
+                  href={APPLY_NOW_URL}
+                  target="_blank"
+                  rel="noreferrer noopener"
                   className="text-jf-yellow underline"
                 >
-                  Apply Now{" "}
-                </Link>{" "}
+                  Apply Now
+                </Link>
               </p>
             </div>
           </div>
