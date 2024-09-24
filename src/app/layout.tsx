@@ -1,4 +1,4 @@
-import type { Metadata } from "next"
+import type { Metadata, Viewport } from "next"
 import localFont from "next/font/local"
 import { Raleway as FontHeading } from "next/font/google"
 import { cn } from "@/utils/shadcn/utils"
@@ -59,7 +59,14 @@ const fontHeading = FontHeading({
 
 export const metadata: Metadata = {
   title: process.env.NEXT_PUBLIC_APP_NAME ?? "Create Next App",
-  viewport: "width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0",
+}
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
+  userScalable: false,
+  themeColor: "#315436",
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
