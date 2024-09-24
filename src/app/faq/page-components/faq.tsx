@@ -1,6 +1,7 @@
 "use client"
 
 import Boxed from "@/components/public/boxed"
+import { APP_URL } from "@/constants/APP_URL"
 import Link from "next/link"
 
 export default function Faq() {
@@ -108,7 +109,7 @@ export default function Faq() {
             </div>
             <p className="text-base text-center">
               You can contact us through our &quot;
-              <Link href="/contact" className="underline hover:text-jf-yellow">
+              <Link href={APP_URL.contact} className="underline hover:text-jf-yellow">
                 Contact
               </Link>
               &quot; page, where you&quot;ll find our contact information and a contact form.

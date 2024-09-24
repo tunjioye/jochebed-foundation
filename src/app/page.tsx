@@ -5,7 +5,6 @@ import BecomeAMember from "./page-components/become-a-member"
 import WaysWeHelp from "./page-components/ways-we-help"
 import Features from "./page-components/features"
 import ScriptureQuote from "./page-components/scripture-quote"
-import ConnectWithUs from "./page-components/connect-with-us"
 
 export const metadata: Metadata = {
   title: process.env.NEXT_PUBLIC_APP_NAME ? `Home | ${process.env.NEXT_PUBLIC_APP_NAME}` : "Home",
@@ -20,7 +19,6 @@ export default function HomePage() {
         <WaysWeHelp />
         <Features />
         <ScriptureQuote />
-        <ConnectWithUs />
       </main>
     </PublicLayout>
   )

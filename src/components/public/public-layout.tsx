@@ -2,13 +2,12 @@
 
 import { APP_URL } from "@/constants/APP_URL"
 import Link from "next/link"
-import { Menu } from "lucide-react"
-import { Button } from "@/components/ui/button"
 import clsx from "clsx"
 import { usePathname } from "next/navigation"
 import Image from "next/image"
 import logo from "/public/img/jochebed-foundation-logo.webp"
 import Boxed from "./boxed"
+import { CONTACT_EMAIL } from "@/constants/CONFIG"
 
 type Props = {
   readonly children: React.ReactNode
@@ -36,8 +35,6 @@ const NAV_MENU_ITEMS = [
     url: APP_URL.faq,
   },
 ]
-
-const CONTACT_EMAIL = "jochebedfoundation@gmail.com"
 
 export function PublicLayout(props: Props) {
   const { children } = props
