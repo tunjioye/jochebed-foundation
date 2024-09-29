@@ -3,7 +3,6 @@ import { PublicLayout } from "@/components/public/public-layout"
 import HomeHero from "./page-components/home-hero"
 import BecomeAMember from "./page-components/become-a-member"
 import WaysWeHelp from "./page-components/ways-we-help"
-import Features from "./page-components/features"
 import ScriptureQuote from "./page-components/scripture-quote"
 
 export const metadata: Metadata = {
@@ -17,7 +16,6 @@ export default function HomePage() {
         <HomeHero />
         <BecomeAMember />
         <WaysWeHelp />
-        <Features />
         <ScriptureQuote />
       </main>
     </PublicLayout>
