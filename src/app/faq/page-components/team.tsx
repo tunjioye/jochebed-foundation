@@ -6,11 +6,6 @@ import linkedInLogo from "/public/img/linkedin-logo.webp"
 
 const TEAM_MEMBERS = [
   {
-    name: "Belvi Nosakhare",
-    image: belviImage.src,
-    linkedIn: "https://www.linkedin.com/in/belvi",
-  },
-  {
     name: "Tiku Nosakhare",
     image: tikuImage.src,
     linkedIn: "https://www.linkedin.com/in/tikuokoye",
@@ -26,7 +21,7 @@ export default function Team() {
           <div className="mt-6 border-t-4 border-black w-10 mx-auto"></div>
         </div>
 
-        <div className="mt-16 mx-auto grid grid-cols-1 sm:grid-cols-2 gap-12 text-center">
+        <div className="mt-16 mx-auto grid grid-cols-1 sm:grid-cols-1 gap-12 text-center">
           {TEAM_MEMBERS.map((member) => (
             <div key={member.name}>
               <img
