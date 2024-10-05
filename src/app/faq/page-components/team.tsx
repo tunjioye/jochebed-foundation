@@ -1,6 +1,5 @@
 "use client"
 
-import belviImage from "/public/img/belvi-nosakhare.webp"
 import tikuImage from "/public/img/tiku-nosakhare.webp"
 import linkedInLogo from "/public/img/linkedin-logo.webp"
 
