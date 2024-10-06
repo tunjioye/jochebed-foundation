@@ -8,6 +8,7 @@ import Image from "next/image"
 import logo from "/public/img/jochebed-foundation-logo.webp"
 import Boxed from "./boxed"
 import { CONTACT_EMAIL } from "@/constants/CONFIG"
+import ScrollToTop from "react-scroll-to-top"
 
 type Props = {
   readonly children: React.ReactNode
@@ -90,6 +91,21 @@ export function PublicLayout(props: Props) {
         </Link>
         <p>&copy; 2024 by {process.env.NEXT_PUBLIC_APP_NAME}</p>
       </footer>
+      <ScrollToTop
+        smooth
+        color="#fff"
+        style={{
+          backgroundColor: "#315436",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          padding: "0.625rem",
+          borderRadius: 0,
+          boxShadow: "0 5px 10px rgba(0, 0, 0, 0.2)",
+          right: "2rem",
+          bottom: "2rem",
+        }}
+      />
     </div>
   )
 }
