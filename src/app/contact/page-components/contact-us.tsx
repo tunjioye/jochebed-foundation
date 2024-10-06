@@ -2,7 +2,6 @@
 
 import Boxed from "@/components/public/boxed"
 import Link from "next/link"
-import { Button } from "@/components/ui/button"
 import { CONTACT_EMAIL, GOOGLE_FORM_URL } from "@/constants/CONFIG"
 
 export default function ContactUs() {
@@ -20,11 +19,18 @@ export default function ContactUs() {
           >
             <span>{CONTACT_EMAIL}</span>
           </Link>
-          <Button asChild size="sm">
-            <Link href={GOOGLE_FORM_URL} target="_blank" rel="noreferrer noopener">
-              <span className="h-[12px]">FILL OUR CONTACT FORM</span>
-            </Link>
-          </Button>
+
+          <iframe
+            src={GOOGLE_FORM_URL}
+            width="100%"
+            height="100%"
+            className="min-h-[1680px] md:min-h-[1540px]"
+            style={{
+              border: 0,
+            }}
+          >
+            Loading…
+          </iframe>
         </div>
       </Boxed>
     </section>
