@@ -2,7 +2,7 @@
 
 import Link from "next/link"
 
-const APPLY_NOW_URL = "https://formfacade.com/sm/mpwHtMB4W"
+const APPLY_NOW_URL = "https://forms.gle/dRDkWKzWgWXD58py8"
 const JOIN_US_URL = "https://opencollective.com/jochebed-scholarship"
 
 export default function Scholarship() {
