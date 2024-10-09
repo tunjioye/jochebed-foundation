@@ -13,6 +13,12 @@ const WAYS_TO_HELP = [
     link: "https://opencollective.com/jochebed-scholarship",
   },
   {
+    title: "Obadiah’s Haven",
+    description:
+      "A dedicated support network for the spouses and dependents of deceased ministers, missionaries, pastors, and educators.",
+    link: "https://opencollective.com/jochebedfoundation/projects/obadiahs-watch",
+  },
+  {
     title: "Porter's House",
     description:
       "An evangelical outreach program dedicated to nurturing and instilling discipline in the younger generation of all tribes and religions.",
@@ -23,12 +29,6 @@ const WAYS_TO_HELP = [
     description:
       "A mission program dedicated to providing support to missionaries operating in the field, and establishing churches in communities across the globe.",
     link: null,
-  },
-  {
-    title: "Obadiah’s Haven",
-    description:
-      "A dedicated support network for the spouses and dependents of deceased ministers, missionaries, pastors, and educators.",
-    link: "https://opencollective.com/jochebedfoundation/projects/obadiahs-watch",
   },
 ]
 
