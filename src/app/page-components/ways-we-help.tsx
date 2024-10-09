@@ -25,7 +25,7 @@ const WAYS_TO_HELP = [
     link: null,
   },
   {
-    title: "Zarephath Rewards",
+    title: "Obadiah’s Haven",
     description:
       "A dedicated support network for the spouses and dependents of deceased ministers, missionaries, pastors, and educators.",
     link: null,
