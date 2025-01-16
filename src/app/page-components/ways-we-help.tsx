@@ -15,7 +15,7 @@ const WAYS_TO_HELP = [
   {
     title: "Obadiah’s Haven",
     description:
-      "A dedicated support network for the spouses and dependents of deceased ministers, missionaries, pastors, and educators.",
+      "A dedicated support network for the spouses and dependents of ministers, missionaries, pastors, and educators who are in need of finaincial and other forms of support.",
     link: "https://opencollective.com/jochebedfoundation/projects/obadiahs-watch",
   },
   {
